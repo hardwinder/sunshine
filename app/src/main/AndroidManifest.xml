@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ckpd.sunshine" >
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -16,6 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="ckpd.sunshine.DetailActivity"
+            android:label="@string/title_activity_detail"
+            android:parentActivityName="ckpd.sunshine.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ckpd.sunshine.MainActivity" />
+        </activity>
+        <activity
+            android:name="ckpd.sunshine.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="ckpd.sunshine.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ckpd.sunshine.MainActivity" />
+        </activity>
+
+
     </application>
 
 </manifest>
